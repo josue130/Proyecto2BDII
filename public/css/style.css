@@ -1,0 +1,17 @@
+body{
+    font-family: 'Roboto';  
+    background-color: #f5f5f5;
+    margin: auto;
+    text-align:center;
+    overflow-y: scroll;
+}
+#main-content {
+	background: white;
+	width: 110%;
+	max-width: 700px;
+    min-height: 100%;
+	margin-left: 30rem;
+    margin-top: 1rem;
+	box-shadow: 0 0 10px rgba(58, 6, 6, 0.1);
+    position: fixed;
+}
