@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 body{
     font-family: 'Roboto';  
     background-color: #f5f5f5;
@@ -5,13 +9,68 @@ body{
     text-align:center;
     overflow-y: scroll;
 }
+
 #main-content {
-	background: white;
-	width: 110%;
-	max-width: 700px;
-    min-height: 100%;
-	margin-left: 30rem;
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    margin: 0 auto;
+    height: 60rem;
+    width: 110%;
+  max-width: 1000px;
     margin-top: 1rem;
-	box-shadow: 0 0 10px rgba(58, 6, 6, 0.1);
-    position: fixed;
+  box-shadow: 0 0 10px rgba(58, 6, 6, 0.1);
+    cursor: pointer;
+}
+#main-content2{
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(28, 27, 27, 0.1);
+  padding: 1rem 0;
+  margin: 0 auto;
+  border-spacing: 10px 5px;
+
+  
+}
+#main-content3 {
+  
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  margin: 0 auto;
+  height: 60rem;
+  width: 110%;
+max-width: 1000px;
+  margin-top: 1rem;
+
+
+  cursor: pointer;
+}
+#main-content4{
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(28, 27, 27, 0.1);
+  padding: 1rem 0;
+  clear: left;
+  
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+  
+}
+#main-content5{
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(28, 27, 27, 0.1);
+  
+  float: right;
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+  
+}
+
+#main-content:hover {
+    box-shadow: 0 0.4rem 0.7rem rgba(0,0,0,0.3);
 }

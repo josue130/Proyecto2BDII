@@ -20,7 +20,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="btn btn-outline-success" aria-current="page" href="/">Statistics</a>
+                    <a class="btn btn-outline-success" aria-current="page" href="/all">Statistics</a>
                     <!-- nav-link active -->
                   </li>
                   
@@ -29,6 +29,7 @@
                 <form action="busqueda" method="POST" class="d-flex">
                   <input class="form-control me-2" name="busqueda" type="search" placeholder="Search" aria-label="Search" utofocus required>
                   <button class="btn btn-outline-success" id="Search">Search</button>
+                  
                 </form>
                 
               </div>
@@ -40,9 +41,55 @@
       <article id = "main-content">
         <Header>
           <h1>Results</h1>
+          <table id ="main-content2">
+            <thead>
+              <tr>
+                <th>Word</th>
+                <th>Page</th>
+              </tr>
+            </thead>
+            <tbody>
+            
+              <% resultados.forEach((transfer)=> { %>
+                <tr>
+                  <td><%= transfer.palabra %></td>
+                  <td><%= transfer.pagina %></td>
+                </tr>
+              <% }) %>
+              
+            </tbody>
+          </table>
+          <article >
+            <table id ="main-content2">
+              <thead>
+                <tr>
+                  <th>Word</th>
+                  <th> % h1</th>
+                  <th> % h2</th>
+                  <th> % h3</th>
+                  <th> % p</th>
+                </tr>
+              </thead>
+              <tbody>
+              
+                <% resultados2.forEach((transfer)=> { %>
+                  <tr>
+                    <td><%= transfer.palabra %></td>
+                    <td><%= transfer.PorcentajeH1 %></td>
+                    <td><%= transfer.PorcentajeSubH2 %></td>
+                    <td><%= transfer.PorcentajeSubH3 %></td>
+                    <td><%= transfer.parrafo %></td>
+                  </tr>
+                <% }) %>
+                
+              </tbody>
+            </table>
+          </article>
+          
         </Header>
       </article>
     </section>
+    
     
 </body>
 </html>
